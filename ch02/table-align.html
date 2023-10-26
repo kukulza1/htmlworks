@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>테이블-수직정렬</title>
+        <style>
+            table{
+                border: 1px solid #bbb;
+            }
+            td{
+                border: 1px solid #bbb;
+                height: 100px;
+                width: 150px;
+                text-align: center;
+            }
+             /*셀의 수직정렬*/
+            .val1{ vertical-align: top;}
+            .val2{ vertical-align:  middle;}
+            .val3{ vertical-align:  bottom;}
+            /*셀렉터 id는 유일한 것을 선택할때, 사용 #(프리픽스,접두어)를 붙히고 사용*/
+            #captop{
+                caption-side: top;
+                margin-bottom: 5px;/*바깥여백(아래쪽*/
+            }
+            #capbottom{
+                caption-side: bottom;
+                margin-top: 10;/*바깥여백(위쪽)*/
+            }
+        </style>
+    </head>
+    <body>
+        <!--2행 3열의 표-->
+        <!--캡션<caption>:표의설명-->        
+        <table>
+            <caption id ="captop">수직정렬(vertical-align)</caption>
+            <tr>
+            <td class="val1">alignment</td>
+            <td class="val2">alignment</td>
+            <td class="val3">alignment</td>
+            </tr>
+        </table>
+        <table>
+            <caption id ="capbottom">수직정렬(vertical-align)</caption>
+            <tr>
+            <td class="val1">alignment</td>
+            <td class="val2">alignment</td>
+            <td class="val3">alignment</td>
+            </tr>
+        </table>
+    </body>
+</html>
