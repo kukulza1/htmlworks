@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>textarea</title>
     <style>
+        form{
+           width: 600px;
+        }
         textarea{
             /*크기조정불가*/
             resize:none;
@@ -17,6 +20,7 @@
     <form action="" method="post">
         <fieldset>
             <legend>배송업무</legend>
+            <!--여러줄 입력하는 기능(멀티라인태그),cols영어기준 글자수,rows보이는 줄수-->
             <textarea col="60" rows="5" name="memo"
                       placeholder="배송시 요청사항입력"></textarea>
         </fieldset>
