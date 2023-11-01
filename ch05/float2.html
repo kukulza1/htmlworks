@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float속성</title>
+    <style>
+        div{
+            margin:10px;
+            padding:10px;
+        }
+        .box1{
+            background: #f0f;
+            
+            float: left; /*box1의 위치가 left가 되고 다음개체는 옆에 위치함*/
+
+        }
+        .box2{
+            background: #0f0;
+           
+            float:left;
+        }
+        .box3{
+            background: #ff0;
+           
+            float:right;
+        }
+        .box4{
+            background: #0ff;
+           
+            /*float속성해제*/
+            clear:both;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">박스1</div>
+     <div class="box2">박스2</div>
+        <div class="box3">박스3</div>
+        <div class="box4">박스4</div>
+    
+</body>
+</html>

@@ -11,6 +11,40 @@
     <h2>레드향주문하기</h2>
     <form action="order.jsp" method="post">
         <fieldset>
+            <legend>상품선택</legend>
+            <p>주문할상품을 선택해 주세요</p>
+            <ul>
+                <!--type=number:숫자표시-->
+                <li>
+                    <label><input type="checkbox" name="checkgift3"value="">선물용3kg</label>
+                    <input type="number" name="num_gift3"min="0" max="5">개(최대5개)
+                </li>
+                <li>
+                    <label><input type="checkbox" name="checkgift5"value="g_5">선물용5kg</label>
+                    <input type="number"  name="num_gift5" min="0" max="3">개(최대3개)
+                </li>
+            </ul>
+            <ul>
+                <!--type=range:숫자표시-->
+                <li>
+                    <label><input type="checkbox" name="ck_fam3"value="g_3">가정용3kg</label>
+                    <input type="range" name="num fa3"min="0" max="5">개(최대5개)
+                </li>
+                <li>
+                    <label><input type="checkbox"name="ck_fam5" value="g_5">가정용5kg</label>
+                    <input type="range"name="num fa5" min="0" max="3">개(최대3개)
+                </li>
+            </ul>
+            <p>포장선택</p>
+            <ul>
+                <li>
+                 <label><input type="radio"name="gift"value="yes">선물포장</label>
+                 <label class="size"><input type="radio"name="gift"value="no">선물포장안함</label>
+                </li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
             <legend>배송정보</legend>
             <ul>
                 <!--읽기만가능-readonly,value="값"출력-->
@@ -51,11 +85,11 @@
     </li>
             </ul>
         </fieldset>
+        <div>
+            <input type="submit" value="주문하기">
+            <input type="reset" value="취소하기">
+        </div>
     </form>
 </div>
-<div>
-    <input type="submit" value="주문하기">
-</div>
-    
 </body>
 </html>

@@ -1,0 +1,75 @@
+/*index.html에연결*/
+*{margin: 0; padding: 0;}
+#c1{
+    width: 1200px;
+    margin: 0 auto;
+}
+header{
+    width: 1200px;/*브라우저크기의80%*/
+    height: 60px;
+  
+    background: rgb(0,76,0);
+    padding: 10px;
+}
+header nav{
+    width: 70%; /*헤더크기의70%*/
+    float: right;
+    text-align: center;
+   
+}
+nav ul li{
+    /*float: right;*/
+    display: inline-block;
+    line-height: 60px;
+    margin: 0px 16px;
+    list-style: none;
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+}
+main{
+    width: 1200px;
+    height: 600px;
+    border: 10px solid #ccc;
+  
+}
+main h2{margin:10px 20px;}
+section{
+    width: 30%;         /*main크기의 31%*/
+    height: 520px;
+    border: 1px dotted;
+    float: left;
+    margin:5px;
+    padding: 10px;
+}
+section h3{
+    background: url(../img/dot.png)no-repeat;
+    background-position: 5px 20px;/*left(x)top(y)*/
+    padding: 16px 32px;
+}
+section dl dt{font-weight: bold;}
+section dl dd{margin-bottom: 16px;}
+aside{
+    clear: both;
+    width: 1200px;
+  
+    padding: 10px;
+    background: greenyellow;
+}
+aside h3{padding-left: 30px;}
+aside ul li{
+    margin: 10px 60px;
+}
+footer{
+    
+    width: 1200px;
+
+    padding: 20px 10px;
+    background: #555;
+
+}
+footer p{
+    color: aqua;
+    text-align: center;
+}
