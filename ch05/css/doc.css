@@ -1,4 +1,6 @@
 /*float-navbar*/
+/*웹폰트 임포트 경로는 맨위에 위치시킴*/
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300;600&family=Nanum+Gothic+Coding&display=swap');
 *{margin:0; padding: 0;}
 /*header 스타일*/
 #container{
@@ -11,17 +13,17 @@ header{
     background: #069;
 }
 header #logo{
-    width: 30%;
+    width: 30%; /*헤더의30%*/
     float:left;
     line-height: 80px;
 }
-#logo h1{color: greenyellow; padding-left: 20px;font-style: italic;}
+#logo h1{color: greenyellow; padding-left: 20px;font-style: italic;font-family: Merienda;}
 header nav{width: 70%;float: right;}
 nav ul{list-style: none;text-align: center; margin-right: 100px;}
 nav ul li{
     float: left;
     margin: 0 20px;
-    line-height: 80px;
+    line-height: 80px; 
 }
 nav ul li a{ color: white;  text-decoration: none; padding:10px;}
 ul li a:hover{color:greenyellow;}

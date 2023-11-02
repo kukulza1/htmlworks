@@ -1,4 +1,5 @@
 /*index.html에연결*/
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300;600&family=Nanum+Gothic+Coding&display=swap');
 *{margin: 0; padding: 0;}
 #c1{
     width: 1200px;
@@ -7,19 +8,29 @@
 header{
     width: 1200px;/*브라우저크기의80%*/
     height: 60px;
-  
     background: rgb(0,76,0);
     padding: 10px;
+}
+header #logo{
+    width: 25%;
+    float: left;
+    line-height: 60px;
+}
+#logo h1{
+    color: skyblue;
+    padding-left: 16px;
+    font-style: italic;
+    font-family: Nanum Gothic Coding;
+    font-weight: bold;
 }
 header nav{
     width: 70%; /*헤더크기의70%*/
     float: right;
     text-align: center;
-   
 }
 nav ul li{
     /*float: right;*/
-    display: inline-block;
+   display: inline-block;
     line-height: 60px;
     margin: 0px 16px;
     list-style: none;
@@ -28,11 +39,18 @@ ul li a{
     color: white;
     text-decoration: none;
 }
+/*링크되거나 방문한 속성을 변경*/
+ul li a:link,a:visited{
+    color:white;
+    text-decoration: none;
+}
+ul li a:hover{
+    color: aquamarine;
+}
 main{
     width: 1200px;
     height: 600px;
-    border: 10px solid #ccc;
-  
+    border: 10px solid #ccc; 
 }
 main h2{margin:10px 20px;}
 section{
@@ -53,21 +71,22 @@ section dl dd{margin-bottom: 16px;}
 aside{
     clear: both;
     width: 1200px;
-  
-    padding: 10px;
+    padding: 50px 20px 60px;
     background: greenyellow;
+}
+aside img{
+    float:left;
+    margin: 10px 150px 10px 10px;
+    border-radius: 10px;
 }
 aside h3{padding-left: 30px;}
 aside ul li{
     margin: 10px 60px;
 }
-footer{
-    
+footer{   
     width: 1200px;
-
     padding: 20px 10px;
     background: #555;
-
 }
 footer p{
     color: aqua;
