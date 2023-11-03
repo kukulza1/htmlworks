@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>z-index속성</title>
+  <style>
+    /*z-index속성은 값이크면 위로 배치되고 작으면 아래로 배치됨*/
+    /*맨위로 보낼때는 10이상의 큰수,아래에 위치시킬때는 -1이하의 작은수를 사용한다*/
+    div{
+      width: 100px;
+      height: 100px;
+      position: absolute;
+    }
+    .box1{
+      background-color: #f00; 
+      top:50px;
+       left: 50px;
+       z-index: 51;
+      }
+    .box2{ background-color: #0f0;
+      top: 70px; left:110px;
+      z-index: 50;
+    }
+    .box3{background-color: #00f;
+      top:110px;
+      left: 80px ;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+   <div class="box1"></div>
+   <div class="box2"></div>
+   <div class="box3"></div>
+</body>
+</html>

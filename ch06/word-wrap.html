@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <meta charset="UTF-8">
+    <title>wordwrap속성</title>
+    <style>
+      ul{
+        width: 200px;
+        border: 1px solid #333;
+        
+      }
+      ul li{
+        list-style: none;
+        margin: 10px 0px;
+        /*영어단어를 줄바꿈(알파벳 철자)*/
+       /*word-wrap: break-word;*/
+        /*word-break: break-word;*/
+        word-break: break-all;
+        
+
+      }
+    </style>
+    
+  </head>
+  <body>
+    <ul>
+      <li>이름:강하늘</li>
+      <li>이메일: sky12cloud1234567@hanmail.net</li>
+      <li>주소: 서울시 영등포구 선유동2로 이레빌딩 19F</li>
+      <li>apple bear chicken horse tiger dog</li>
+    </ul>
+    
+  </body>
+</html>

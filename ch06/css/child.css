@@ -1,0 +1,30 @@
+/*child.css*/
+#container{
+  width: 960;
+  margin: 0 auto;
+}
+.contents{
+  width: 400px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+/*모든 자식요소중 첫번째 자식요소*/
+.contents :first-child{ /* == nth-child(1)*/
+  color: blue;
+}
+/*모든자식요소중애서 n번째 자식요소*/
+/*n=0대입*/
+.contents :nth-child(2n){
+    background-color: yellow;
+}
+.contents :last-child{
+  background-color: greenyellow;
+}
+/* p:nth-of-type() */
+.contents p:nth-last-of-type(2){ /*p태그 중에서 2번째 선택*/
+      color: red;
+}
+.contents h2:nth-of-type(2){
+  color: green;
+}

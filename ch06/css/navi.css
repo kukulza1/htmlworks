@@ -1,0 +1,29 @@
+/*aSelector.html */
+*{margin: 0; padding: 0;}
+.wrap{
+  width: 960;
+  margin:  0 auto;
+}
+nav{
+  height: 80px;
+  text-align: center;
+}
+nav ul{
+  list-style: none;
+  border-bottom: 2px solid #ccc;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0px 20px;
+}
+ul li a:link, a:visited{ /*== ul li a{}*/
+  text-decoration: none;
+  color: black
+}
+ul li a:hover,a:focus{
+  background-color: aquamarine;
+  color: azure;
+  padding: 10px 0px;
+}
+ul li a:active{background-color: red;}
