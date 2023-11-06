@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>transition 속성(시간)</title>
+  <style>
+    .trl{
+      width: 100px;
+      height: 100px;
+      background-color: aquamarine;
+
+      /*transition 속성 시간(s -초)*/
+      /*transition-property: width;
+      transition-duration: 1s;*/
+      transition: width, height 0.03s;
+    }
+    .trl:hover{
+      width: 200px;
+      height: 50px;
+    }
+  </style>
+</head>
+<body>
+   <div class="trl"></div>
+</body>
+</html>

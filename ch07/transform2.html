@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>transform: 속성(변형)</title>
+  <style>
+    /*transform 속성값
+       -rotate(): 회전, translate():이동, -scale():크기*/
+       div.a{
+        width: 150px;
+        height: 80px;
+        background-color: #0f0;
+       }
+       div.b{
+        width: 150px;
+        height: 80px;
+        background-color: #0f0;
+        /*x축방향으로 50픽셀이동*/
+      
+       }
+       div.b:hover{transform:translateX(50px);}
+       div.c{
+        width: 150px;
+        height: 80px;
+        background-color: #0f0;
+        /*시계방향으로 30도 회전*/
+        
+       }
+       div.c:hover{ transform:rotate(30deg);}
+       div.d{
+        width: 150px;
+        height: 80px;
+        background-color: #0f0;
+
+       }
+       /* y축확대축소 x축확대축소 scale()모든방향 확대축소*/
+       div.d:hover{transform:scaleY(1.5);}
+  </style>
+</head>
+<body>
+   <h2>변형전 개체</h2>
+    <div class="a">hello world</div>
+
+   <h2>transform: translate(50px)</h2>
+    <div class="b">hello world</div>
+
+   <h2>transform: rotate(30px)</h2>
+    <div class="c">hello world</div>
+
+   <h2>transform: scaleY(1.5)</h2>
+    <div class="d">hello world</div>
+</body>
+</html>
