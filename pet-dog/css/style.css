@@ -1,27 +1,110 @@
-/*공통스타일(common)*/
-@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300;600&family=Nanum+Gothic&family=Nanum+Gothic+Coding&display=swap');
-*{margin:0; padding:0;}
+/* index.html에 연결 - style.css */
+/* 공통 스타일(common) */
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@600&family=Nanum+Gothic+Coding:wght@700&display=swap');
+*{margin: 0; padding: 0;}
 a{text-decoration: none;}
 ul{list-style: none;}
 #wrap{width: 1200px; margin: 0 auto;}
 
-
-/*header 메뉴*/
-header{width: 100%;height: 100px;background: #0077cc;}
+/* header 영역 */
+header{width: 100%; height: 100px; background: #0077cc}
 #logo{float: left; width: 250px; line-height: 100px;}
-header nav{float: right; width: 900px;  padding-top: 40px;}
-#logo h1{padding-left: 20px; color:  greenyellow; font-style: italic;}
+#logo h1 a{padding-left: 20px; color: greenyellow; 
+  font-style: italic; font-family: Nanum Gothic Coding;
+}
+header nav{float: right; width: 900px; padding-top: 40px;}
 
-/*주메뉴*/
-#topmenu{height: 60px; margin-left: 100px;}
-#topmenu > li{float: left; position:relative}
-#topmenu>li>a{display: block; color: #fff; padding:20px 40px;}
-#topmenu > li > a:hover{color: #000;}
-/*서브메뉴*/
-#topmenu > li >ul{ display: none; background: rgba(160,277,5,0.6) ; position: absolute; 
-                      width: 160px;}
-#topmenu li:hover>ul{display: block ; z-index: 10;}
-#topmenu > li >ul> li{padding: 8px 0 8px 36px;}
-#topmenu > li >ul> li > a{font-size: 15px; color:#000;}
-#topmenu > li > ul > li> a:hover{color:red}
+/* 주메뉴 */
+#topMenu{height: 60px; margin-left: 100px;}
+#topMenu > li{float: left; position: relative;}
+#topMenu > li > a{display: block; color: #fff; padding: 20px 40px;}
+#topMenu > li > a:hover{color: #000;}
+/* 서브메뉴 */
+#topMenu > li > ul{display: none; position: absolute; width: 160px;
+  background: rgba(225, 252, 162, 0.6);
+}
+#topMenu > li:hover > ul{display: block; z-index: 10;}
+#topMenu > li > ul > li{padding: 8px 0 8px 36px;}
+#topMenu > li > ul > li > a{font-size: 15px; color: #000;}
+#topMenu > li > ul > li > a:hover{color: #f00}
+/* main 스타일 */
+main{
+    height: 600px;
+    padding: 5px;
+    border: 5px solid #ccc;
+}
+main h1{margin-top: 100px; text-align: center;}
+#s2, #s3, #s4{
+    float: left;
+    width: 31%;   /* main 크기의 31% */
+    height: 520px;
+    border: 1px dotted #ccc;
+    margin: 5px;
+    padding: 5px;
+}
+section h3{
+    background: url(../img/dot.png) no-repeat;
+    background-position: 5px 20px; /*left(x) top(y)*/
+    padding: 16px 24px;
+}
+section dl dt{font-weight: bold;}
+section dl dd{margin-bottom: 16px;}
+aside{
+    clear: both;
+    padding: 40px 20px 60px;
+    background: greenyellow;
+}
+aside img{
+    float: left;
+    margin: 0 150px 10px 40px;
+    border-radius: 10px;
+}
+aside h3{padding-left: 30px;}
+aside ul li{
+    margin: 10px 60px;
+}
+footer{
+    padding: 20px 10px;
+    background: #555;
+}
+footer p{
+    color: rgb(235, 234, 234);
+    text-align: center;
+}
+#index{border: 5px solid #ccc}
+#index h1{margin-top: 100px; text-align: center;}
+/*contents 영역*/
+#index#contents{height: 800px; margin-top:100px;}
+#tabmenu{width: 600px; margin:0 auto; }
+#tabmenu input[type="radio"]{display: none;}
+#tabmenu label{ display: inline-block; padding: 15px 25px; color:#aaa;}
+#tabmenu label:hover{color:#222; cursor:pointer;}
+#tabmenu input:checked + label{
+  color: #f00; border: 1px solid #ddd; background: #eee;
+}
+#tabmenu .tabcontent{
+  display: none; padding: 20px 0 0 0; border-top: 1px solid #ddd;
+}
+/*' ~ ' 형제선택자 모두선택*/
+#tab1:checked ~ #notice,
+#tab2:checked ~ #gallery{display: block;}
 
+#tabmenu .tabcontnet h2{display: none;}
+#notice ul{margin-left: 30px; list-style: square;}
+#notice ul li{line-height: 3; font-size: 14px;}
+#gallery ul li{display: inline;}
+
+/*type페이지 스타일*/
+/*#type{height: 800px; border: 5px solid #ccc;}
+#type h2{clear:both; padding:24px 24px 16px;}
+/*#type section{
+    float: left;
+    width: 30%;
+    height: 520px;
+    border: 1px dotted #ccc;
+    margin: 0 10px 0 14px;
+    padding: 5px;
+}
+#type section h3{
+    background: url(./img/dot);
+}*/

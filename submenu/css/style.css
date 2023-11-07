@@ -25,3 +25,28 @@ header nav{float: right; width: 900px;  padding-top: 40px;}
 #topmenu > li >ul> li > a{font-size: 15px; color:#000;}
 #topmenu > li > ul > li> a:hover{color:red}
 
+/*contents 영역*/
+#contents{height: 800px; margin-top:100px ;}
+#tabmenu{width: 600px; margin:0 auto; }
+#tabmenu input[type="radio"]{display: none;}
+#tabmenu label{ display: inline-block;
+  padding: 15px 25px; color: #aaa;
+}
+#tabmenu label:hover{color:#222; cursor:pointer;}
+#tabmenu input:checked + label{
+  color: #f00; border: 1px solid #ddd; background: #eee;
+}
+#tabmenu .tabcontent{
+  display: none; padding: 20px 0 0 0; border-top: 1px solid #ddd;
+}
+/*' ~ ' 형제선택자 모두선택*/
+#tab1:checked ~ #notice,
+#tab2:checked ~ #gallery{display: block;}
+
+#tabmenu .tabcontnet h2{display: none;}
+#notice ul{margin-left: 30px; list-style: square;}
+#notice ul li{line-height: 3; font-size: 14px;}
+#gallery ul li{display: inline;}
+
+
+

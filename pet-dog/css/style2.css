@@ -63,7 +63,7 @@ section{
     padding: 10px;
 }
 section h3{
-    background: url(../img/dot.png)no-repeat;
+    background: url(./img/dot.png)no-repeat;
     background-position: 5px 20px;/*left(x)top(y)*/
     padding: 16px 32px;
 }

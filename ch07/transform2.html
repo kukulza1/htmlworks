@@ -36,6 +36,16 @@
        }
        /* y축확대축소 x축확대축소 scale()모든방향 확대축소*/
        div.d:hover{transform:scaleY(1.5);}
+
+       div.e{
+        width: 150px;
+        height: 80px;
+        background-color: #0f0;
+       }
+       div.e:hover{
+        transform: skewX(30deg);
+        transform: skewY(-30deg);
+       }
   </style>
 </head>
 <body>
@@ -50,5 +60,8 @@
 
    <h2>transform: scaleY(1.5)</h2>
     <div class="d">hello world</div>
+
+   <h2>transform: skewX(30deg)</h2>
+    <div class="e">hello world</div>
 </body>
 </html>

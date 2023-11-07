@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>em과 rem비교</title>
+  <style>
+    body{
+      font-size: 12px;
+    }
+    /*16px =1em  1rem=16px*/
+    /*em은 상속의 영향을받음(기본은16px),rem은 받지않음*/
+    p.a{ font-size:2em;}
+    p.b{ font-size:2rem;}
+  </style>
+</head>
+<body>
+   <h1>em과 rem비교</h1>
+   <p class="a">em단위</p>
+   <p class="b">rem단위</p>
+</body>
+</html>
