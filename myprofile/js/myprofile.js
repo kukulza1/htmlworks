@@ -1,6 +1,6 @@
 window.onload=function(){
-  let picture = ["img/bg0.jpg","img/bg1.jpg","img/bg5.jpg"
-                  ,"img/prod1.jpg"];
+  let picture = ["img/bgb.jpg","img/bg.jpg"
+                  ,"img/bg2.jpg","img/bg33.jpg"];
 
   let i= 0;
  showSlide();
@@ -20,7 +20,12 @@ function myWatch(){
   console.log(time);
 
   let watch = document.getElementById("show")
-  watch.innerHTML = time;
+  //watch.innerHTML = time;
+  if(time>12){
+        watch.innerHTML = time.replace("오전","am")
+  }else{
+    watch.innerHTML = time.replace("오후","pm")
+  }
   watch.style.color="orangered";
 }
 }
