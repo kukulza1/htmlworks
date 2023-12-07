@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .mystyle{
+      background: coral;
+      padding: 16px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h2>클래스리스트속성</h2>
+ 
+  <button onclick="classAdd()">add</button>
+  <button onclick="classremove()">remove</button>
+  <button onclick="classtoggle()">toggle</button>
+
+  <div id="mydiv">
+    <p>좋은하루</p>
+  </div>
+
+  
+  <script>
+    function classAdd(){
+     let list = document.getElementById("mydiv").classList;
+     list.add("mystyle");//클래스이름이 mystyle을 추가함
+    }
+    function classremove(){
+     let list = document.getElementById("mydiv").classList;
+     list.remove("mystyle");//클래스이름이 mystyle을 추가함
+    }
+    function classtoggle(){
+     let list = document.getElementById("mydiv").classList;
+     list.toggle("mystyle");//클래스이름이 mystyle을 추가함
+    }
+  </script>
+</body>
+</html>
